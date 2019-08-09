@@ -1,0 +1,37 @@
+#green{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color:gray;
+    position: absolute;
+
+}
+#gray{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color:darkgreen;
+    position: absolute;
+
+}
+#green1{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color:lightgreen;
+    position: absolute;
+}
+#green2{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color:rgb(102, 226, 102);
+    position: absolute;
+}
+#pink{
+    width: 40px;
+    height: 40px;
+    border-radius: 35px;
+    background-color:rgb(199, 136, 147);
+    position: absolute;
+}

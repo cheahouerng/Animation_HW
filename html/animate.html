@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="green"></div>
+    <div id="gray"></div>
+    <div id="green1"></div>
+    <div id="green2"></div>
+    <div id="pink"></div>
+
+
+
+
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        green_buble();
+        gray_buble();
+        green1_buble();
+        green2_buble();
+        pink_buble();
+
+
+    })
+    function green_buble(){
+        var div=$("#green");
+        div.animate({
+            left:'1000px'
+        })
+        .animate({top:'300px'})
+        .animate({left:'0'})
+        .animate({top:'0'},1000,function(){
+            green_buble();
+
+        })
+
+    }
+    function gray_buble(){
+        var div=$("#gray");
+        div.animate({
+            left:'1000px'
+        })
+        .animate({top:'300px'})
+        .animate({left:'0'})
+        .animate({top:'0'},1600,function(){
+            gray_buble();
+
+        })
+
+    }
+    function green1_buble(){
+        var div=$("#green1");
+        div.animate({
+            left:'1200px'
+        })
+        .animate({top:'300px'})
+        .animate({left:'0'})
+        .animate({top:'0'},1400,function(){
+            green1_buble();
+
+        })
+
+    }
+    function green2_buble(){
+        var div=$("#green2");
+        div.animate({
+            right:'1300px'
+        })
+        .animate({bottom:'0'})
+        .animate({right:'500px'})
+        .animate({bottom:'500px'},1100,function(){
+            green2_buble();
+
+        })
+
+    }
+    function pink_buble(){
+        var div=$("#pink");
+        div.animate({
+            right:'0'
+        })
+        .animate({top:'1000'})
+        .animate({right:'0'})
+        .animate({top:'500'},1100,function(){
+            pink_buble();
+
+        })
+
+    }
+
+
+    
+    
+    </script>
+</body>
+</html>
